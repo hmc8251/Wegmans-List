@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Shopping List</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px"></h1>
+    <p></p>
+  </div>
+</div>
+<div id=navbar>
+	<ul>
+	  <li><a>~</a></li>
+	</ul>
+</div>
+
+<div id = titleText>
+	<h2>Your Shopping List</h2>
+</div>
+
+<p id="list"></p>
+
+<script>
+
+var myObj, i, x = "<table id = 'countit'><tr><th>Item</th><th>Location<th>Price</th></tr>" ;
+myObj = {
+    "item":[ "Bread", "Milk", "Eggs" ],
+    "location":[ "Bakery", "Dairy", "Dairy" ],
+    "price":[ "3", "2", "2" ]
+
+
+};
+
+for (i = 0; i < 3; i++) {
+    x +=  "<tr>";
+    x += "<td><input id='checkBox' type='checkbox'>" + myObj.item[i] + " </td>";
+    x +=  "<td>" + myObj.location[i] + " </td>";
+    x +=  "<td class = 'count-me'>" + myObj.price[i] + " </td>";
+    x += "</tr>";
+
+}
+
+
+document.getElementById("list").innerHTML = x + "</table>";
+
+
+var tds = document.getElementById('countit').getElementsByTagName('td');
+            var sum = 0;
+            for(var i = 0; i < tds.length; i ++) {
+                if(tds[i].className == 'count-me') {
+                    sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+                }
+            }
+            document.getElementById('countit').innerHTML += '<tr><td>Total</td><td></td><td>' + sum + '</td></tr>';
+
+
+</script>
+
+</body>
+</html>

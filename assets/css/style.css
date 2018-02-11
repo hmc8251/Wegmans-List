@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 15.4px;
+  background-color: #F7A53F;
+}
+
+.hero-image {
+  background-image: url(https://www.wegmans.com/content/dam/wegmans/images/news-media/gallery/72/Wegmans-Store-Front-2.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7A53F;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color:#F7A53F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar{
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+
+
+#list{
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+  padding: 40px;
+  background-color: #F7A53F;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #e5e5e5}
+
+th {
+    background-color: #2163A0;
+    color: white;
+}
+
+h2{
+  color: white;
+  padding-left: 10%;
+}
+
+#total th{
+  background-color: #388ad6;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+table{
+  align-content: center;
+}
